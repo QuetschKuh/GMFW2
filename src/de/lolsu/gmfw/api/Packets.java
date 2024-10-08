@@ -13,14 +13,14 @@ import org.bukkit.entity.Player;
 public class Packets {
 
     /** The packets */
-    private Packet<PacketListenerPlayOut>[] packetsPlayOut;
+    private final Packet<PacketListenerPlayOut>[] packets;
 
     /**
      * @param packets The packets that may be sent later, in order
      * */
     @SafeVarargs
     public Packets(Packet<PacketListenerPlayOut>... packets) {
-        packetsPlayOut = packets;
+        this.packets = packets;
     }
 
     /**
@@ -29,7 +29,24 @@ public class Packets {
      * */
     public void send(Player player) {
         PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
-        for(Packet<PacketListenerPlayOut> packet : packetsPlayOut)
+        for(Packet<PacketListenerPlayOut> packet : packets)
+            connection.sendPacket(packet);
+    }
+
+    /**
+     * Sends the given packet to the given player
+     * */
+    public static void send(Player player, Packet<PacketListenerPlayOut> packet) {
+        ((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
+    }
+
+    /**
+     * Sends the given packets to the given player
+     * */
+    @SafeVarargs
+    public static void send(Player player, Packet<PacketListenerPlayOut>... packets) {
+        PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
+        for(Packet<PacketListenerPlayOut> packet : packets)
             connection.sendPacket(packet);
     }
 

@@ -1,0 +1,5 @@
+# The spawns for the map, should be in order for a better player experience
+# This is the only value predefined by GMFW2, you usually have more in here such as chest locations in skywars
+Spawns:
+  Game: []
+  Spec:

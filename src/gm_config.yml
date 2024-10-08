@@ -1,0 +1,41 @@
+# The total player count allowed, the amount of players per team and the amount of players needed to start the game
+# The amount of teams will be calculated automatically. Size.Total should be a multiple of Size.Team
+Size:
+  Total: 12
+  Team: 2
+
+# The stats that should be displayed in the scoreboard
+# Available stats are: kills, deaths, finalsout, finalsin, damageout, damagein, blocksplaced, blocksbroken, chests.
+# You can add well over 5 stats, but 3 is the minimum and recommended amount. The first 3 will be presented on the podium
+Stats:
+  Displayed:
+    Pregame:
+      - "kills"
+      - "deaths"
+      - "damageout"
+    Ingame:
+      - "kills"
+      - "damageout"
+      - "blocksplaced"
+
+# The length of the countdown until start, the amount of players needed to start the countdown and the amount of players needed to quick-start (20s)
+Countdown:
+  Length: 150
+  ToStart: 4
+  ToQuick: 8
+
+# Contains the spawn location for the lobby world
+Lobby:
+  Spawn:
+
+# Contains the spawn, as well as podium (NPC) locations and fireworks locations
+Podium:
+  Spawn:
+  NPCs:
+    Winners:
+    Stat1:
+    Stat2:
+    Stat3:
+  Fireworks:
+    1:
+    2:

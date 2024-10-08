@@ -1,0 +1,62 @@
+# This is the only configuration meant to be accessed directly by you. gm_config.yml and each map's gm_map.yml should only be modified with in-game commands. Still they have comments when newly created, after configuring in game only the top-most comment remains.
+
+# "Gamemode" is presented in TAB, "Name" in scoreboard and prefixes, "Server" in scoreboard and TAB. You may use § color-codes
+Names:
+  Name: "exampleGM"
+  Server: "example.com"
+  Gamemode: "Gamemode"
+
+# This will be displayed in the rulebook, use <br> for line breaks and new elements in the list for new pages.
+Rules:
+  - ""
+  - ""
+
+# Random messages that should be broadcasted when the game hasn't started yet
+InfoTexts:
+  - "Gamemode Framework 2.0!"
+  - "Fully customizable!"
+  - "Only with the best setup features!"
+  - "Made by QuetschKuh"
+  - "Visit https://lolsu.de/"
+
+# The credits shown on the nametag in the lobby
+# Given the first line with index 0, set even indexes as the title and odd indexes as the content
+# e.g. 0: "Developers", 1: "Guy 1, Girl 2", 2: "Builders", 3: "Person 0", ...
+# On the item lore the even lines color codes will be used for the odd lines
+# e.g. 0: "§5Developers", 1: "§2Guy 1, Girl 2" will become 0: "§5Developers", 1: "§5Guy 1, Girl 2"
+Credits:
+  - ""
+  - ""
+
+# The localisation of the different statistics
+Stats:
+  Short:
+    kills: "Kills"
+    deaths: "Deaths"
+    finalsout: "Finals"
+    finalsin: "F-Deaths"
+    damageout: "Damage"
+    damagein: "Taken"
+    blocksplaced: "Placed"
+    blocksbroken: "Broken"
+    chests: "Chests"
+  Long:
+    kills: "Players killed"
+    deaths: "Times died"
+    finalsout: "Final kills"
+    finalsin: "Final deaths"
+    damageout: "Damage dealt"
+    damagein: "Damage taken"
+    blocksplaced: "Blocks placed"
+    blocksbroken: "Blocks broken"
+    chests: "Chests opened"
+  Most:
+    kills: "Killed the most players"
+    deaths: "Died the most often"
+    finalsout: "Killed the most players"
+    finalsin: "Died the most often"
+    damageout: "Dealt the most damage"
+    damagein: "Took the most damage"
+    blocksplaced: "Placed the most blocks"
+    blocksbroken: "Broke the most blocks"
+    chests: "Opened the most chests"
